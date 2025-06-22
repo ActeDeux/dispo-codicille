@@ -1,0 +1,91 @@
+body {
+  font-family: Georgia, serif;
+  background: #4b0000;
+  color: white;
+  margin: 0;
+  padding: 1rem;
+}
+h1, h2, h3 {
+  text-align: center;
+  color: gold;
+  margin: 0.5rem 0;
+}
+.nav {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.btn {
+  display: inline-flex;
+  align-items: center;
+  background: linear-gradient(145deg, #d4af37, #b8860b);
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  color: #4b0000;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0,0,0,0.4);
+}
+.login {
+  text-align: center;
+  margin-top: 2rem;
+}
+input {
+  padding: 0.4rem;
+  font-size: 1rem;
+  width: 200px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.date-cell {
+  padding: 0.8rem;
+  background: #0a0;
+  border: 2px solid #060;
+  border-radius: 8px;
+  margin: 6px;
+  width: 140px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
+  color: #fff;
+  transition: background 0.2s, transform 0.1s;
+}
+.date-cell:hover {
+  transform: scale(1.05);
+}
+.date-cell.red {
+  background: #900;
+  border-color: #600;
+}
+.date-cell.other {
+  position: relative;
+}
+.date-cell.other::after {
+  content: "👎";
+  position: absolute;
+  top: 4px;
+  right: 8px;
+}
+.month-block {
+  margin-bottom: 2rem;
+}
+.table {
+  border-collapse: collapse;
+  width: 90%;
+  margin: auto;
+}
+.table th, .table td {
+  border: 1px solid #555;
+  padding: 0.5rem;
+  text-align: center;
+}
