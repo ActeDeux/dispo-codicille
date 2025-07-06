@@ -90,7 +90,7 @@ export default function App() {
         <input
           value={tempName}
           maxLength={20}
-          placeholder="Votre prénom : "
+          placeholder="Votre prénom"
           onChange={e => setTempName(e.target.value)}
         />
         <button className="btn" onClick={handleLogin}>Valider</button>
